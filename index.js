@@ -121,7 +121,14 @@ console.log(car);
 */
 
 class Lambdasian {
-  
+  constructor(attrs) {
+    this.name = attrs.name;
+    this.age = attrs.age;
+    this.location = attrs.location;
+  }
+  speak() {
+    return `Hello my name is ${this.name}, I am from ${this.location}.`
+  }
 }
 
 /*
